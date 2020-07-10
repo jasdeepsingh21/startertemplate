@@ -1,0 +1,5 @@
+export const USER = {
+  LOGIN: 'USER_SIGNIN',
+  LOGOUT: 'USER_SIGNOUT',
+  SAVED_DATA: 'USER_DATA_SAVED',
+};
