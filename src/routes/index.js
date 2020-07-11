@@ -8,16 +8,18 @@ import {
 import PrivateRoutes from './PrivateRoutes';
 import PublicRoutes from './PublicRoutes';
 
-const authenticate = () => {
-  const user = '';
-  if (user !== '') {
+const authenticate = ({ history }) => {
+  console.log('in auth enticate', history);
+  const user = window.localStorage.getItem('user');
+  // console.log('in auth user', user);
+  if (user) {
     return <Redirect to="/app/dashboard" />;
   }
-  return <PublicRoutes />;
+  return <PublicRoutes history={history} />;
 };
 
 function Routes({ history }) {
-  console.log('in routes');
+  console.log('in routes', history);
   return (
     <Router history={history}>
       <Switch>

@@ -10,7 +10,7 @@ import store from './store';
 const browserHistory = createBrowserHistory();
 const history = syncHistoryWithStore(browserHistory, store);
 
-console.log('in index');
+console.log('in index his', history);
 
 ReactDOM.render(
   <Provider store={store}>

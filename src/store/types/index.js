@@ -3,3 +3,10 @@ export const USER = {
   LOGOUT: 'USER_SIGNOUT',
   SAVED_DATA: 'USER_DATA_SAVED',
 };
+
+export const SEARCH = {
+  PLANET: 'SEARCH_PLANET',
+  PLANET_SUCCESS: 'SEARCH_PLANET_SUCCESS',
+};
+export const SHOW_ERROR = 'SHOW_ERROR';
+export const HIDE_ERROR = 'HIDE_ERROR';
